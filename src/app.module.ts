@@ -6,6 +6,9 @@ import { AuthModule } from './modules/auth/auth.module';
 import { ClientesModule } from './modules/clientes/clientes.module';
 import { TiposProyectoModule } from './modules/tipos-proyecto/tipos-proyecto.module';
 import { CargosModule } from './modules/cargos/cargos.module';
+import { EmpleadosModule } from './modules/empleados/empleados.module';
+import { EmpresasContratistasModule } from './modules/empresas-contratistas/empresas-contratistas.module';
+
 
 
 @Module({
@@ -28,6 +31,8 @@ import { CargosModule } from './modules/cargos/cargos.module';
     ClientesModule,
     TiposProyectoModule,
     CargosModule,
+    EmpleadosModule,
+    EmpresasContratistasModule,
   ],
 })
 export class AppModule {}
