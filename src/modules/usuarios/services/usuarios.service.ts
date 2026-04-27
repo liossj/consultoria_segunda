@@ -73,4 +73,15 @@ export class UsuariosService {
 
     return await this.usuariosRepository.save(usuario);
   }
+
+  async obtenerPorCorreo(correo: string) {
+    return await this.usuariosRepository.findOne({
+      where: { correo },
+    });
+  }
+  async eliminar(id: number) {
+    const usuario = await this.obtenerPorId(id);
+
+    return await this.usuariosRepository.remove(usuario);
+  }
 }

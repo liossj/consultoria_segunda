@@ -16,4 +16,7 @@ export class Usuario {
 
   @Column({ default: true })
   estado: boolean;
+
+  @Column({ default: 'usuario' })
+  rol: string;
 }

@@ -23,4 +23,8 @@ export class ActualizarUsuarioDto {
   @IsOptional()
   @IsBoolean()
   estado?: boolean;
+
+  @IsOptional()
+  @IsString()
+  rol?: string;
 }

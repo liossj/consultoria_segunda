@@ -2,6 +2,9 @@ import { Body, Controller, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs
 import { ActualizarUsuarioDto } from '../dto/actualizar-usuario.dto';
 import { CrearUsuarioDto } from '../dto/crear-usuario.dto';
 import { UsuariosService } from '../services/usuarios.service';
+import { UseGuards } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+import { Delete } from '@nestjs/common';
 
 @Controller('usuarios')
 export class UsuariosController {
@@ -11,7 +14,7 @@ export class UsuariosController {
   crear(@Body() data: CrearUsuarioDto) {
     return this.usuariosService.crear(data);
   }
-
+  @UseGuards(AuthGuard('jwt'))
   @Get()
   obtenerTodos() {
     return this.usuariosService.obtenerTodos();
@@ -28,5 +31,10 @@ export class UsuariosController {
     @Body() data: ActualizarUsuarioDto,
   ) {
     return this.usuariosService.actualizar(id, data);
+  }
+
+  @Delete(':id')
+  eliminar(@Param('id', ParseIntPipe) id: number) {
+    return this.usuariosService.eliminar(id);
   }
 }
