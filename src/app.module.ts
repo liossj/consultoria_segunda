@@ -11,7 +11,7 @@ import { EmpresasContratistasModule } from './modules/empresas-contratistas/empr
 import { ResponsablesContratistasModule } from './modules/responsables-contratistas/responsables-contratistas.module';
 import { ProyectosModule } from './modules/proyectos/proyectos.module';
 import { RamaTrabajoModule } from './modules/rama-trabajo/rama-trabajo.module';
-
+import { MaterialesModule } from './modules/materiales/materiales.module';
 
 
 @Module({
@@ -39,6 +39,7 @@ import { RamaTrabajoModule } from './modules/rama-trabajo/rama-trabajo.module';
     ResponsablesContratistasModule,
     ProyectosModule,
     RamaTrabajoModule,
+    MaterialesModule,
   ],
 })
 export class AppModule {}
