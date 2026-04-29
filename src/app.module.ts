@@ -9,7 +9,7 @@ import { CargosModule } from './modules/cargos/cargos.module';
 import { EmpleadosModule } from './modules/empleados/empleados.module';
 import { EmpresasContratistasModule } from './modules/empresas-contratistas/empresas-contratistas.module';
 import { ResponsablesContratistasModule } from './modules/responsables-contratistas/responsables-contratistas.module';
-
+import { ProyectosModule } from './modules/proyectos/proyectos.module';
 
 @Module({
   imports: [
@@ -34,6 +34,7 @@ import { ResponsablesContratistasModule } from './modules/responsables-contratis
     EmpleadosModule,
     EmpresasContratistasModule,
     ResponsablesContratistasModule,
+    ProyectosModule,
   ],
 })
 export class AppModule {}
