@@ -12,7 +12,7 @@ import { ResponsablesContratistasModule } from './modules/responsables-contratis
 import { ProyectosModule } from './modules/proyectos/proyectos.module';
 import { RamaTrabajoModule } from './modules/rama-trabajo/rama-trabajo.module';
 import { MaterialesModule } from './modules/materiales/materiales.module';
-
+import { TrabajadoresObraModule } from './modules/trabajadores-obra/trabajadores-obra.module';
 
 @Module({
   imports: [
@@ -40,6 +40,7 @@ import { MaterialesModule } from './modules/materiales/materiales.module';
     ProyectosModule,
     RamaTrabajoModule,
     MaterialesModule,
+    TrabajadoresObraModule,
   ],
 })
 export class AppModule {}
