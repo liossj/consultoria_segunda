@@ -17,7 +17,7 @@ import { VisitasObraModule } from './modules/visitas-obra/visitas-obra.module';
 import { SolicitudesCambioModule } from './modules/solicitudes-cambio/solicitudes-cambio.module';
 import { PresupuestosModule } from './modules/presupuestos/presupuestos.module';
 import { GastosModule } from './modules/gastos/gastos.module';
-
+import { InformesVisitaModule } from './modules/informes-visita/informes-visita.module';
 
 
 
@@ -52,6 +52,7 @@ import { GastosModule } from './modules/gastos/gastos.module';
     SolicitudesCambioModule,
     PresupuestosModule,
     GastosModule,
+    InformesVisitaModule,
   ],
 })
 export class AppModule {}
