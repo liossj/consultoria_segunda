@@ -15,7 +15,7 @@ import { MaterialesModule } from './modules/materiales/materiales.module';
 import { TrabajadoresObraModule } from './modules/trabajadores-obra/trabajadores-obra.module';
 import { VisitasObraModule } from './modules/visitas-obra/visitas-obra.module';
 import { SolicitudesCambioModule } from './modules/solicitudes-cambio/solicitudes-cambio.module';
-
+import { PresupuestosModule } from './modules/presupuestos/presupuestos.module';
 
 
 
@@ -50,6 +50,7 @@ import { SolicitudesCambioModule } from './modules/solicitudes-cambio/solicitude
     TrabajadoresObraModule,
     VisitasObraModule,
     SolicitudesCambioModule,
+    PresupuestosModule,
   ],
 })
 export class AppModule {}
