@@ -13,6 +13,13 @@ import { ProyectosModule } from './modules/proyectos/proyectos.module';
 import { RamaTrabajoModule } from './modules/rama-trabajo/rama-trabajo.module';
 import { MaterialesModule } from './modules/materiales/materiales.module';
 import { TrabajadoresObraModule } from './modules/trabajadores-obra/trabajadores-obra.module';
+import { VisitasObraModule } from './modules/visitas-obra/visitas-obra.module';
+
+
+
+
+
+
 
 @Module({
   imports: [
@@ -41,6 +48,7 @@ import { TrabajadoresObraModule } from './modules/trabajadores-obra/trabajadores
     RamaTrabajoModule,
     MaterialesModule,
     TrabajadoresObraModule,
+    VisitasObraModule,
   ],
 })
 export class AppModule {}
