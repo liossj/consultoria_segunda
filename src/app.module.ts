@@ -14,7 +14,7 @@ import { RamaTrabajoModule } from './modules/rama-trabajo/rama-trabajo.module';
 import { MaterialesModule } from './modules/materiales/materiales.module';
 import { TrabajadoresObraModule } from './modules/trabajadores-obra/trabajadores-obra.module';
 import { VisitasObraModule } from './modules/visitas-obra/visitas-obra.module';
-
+import { SolicitudesCambioModule } from './modules/solicitudes-cambio/solicitudes-cambio.module';
 
 
 
@@ -49,6 +49,7 @@ import { VisitasObraModule } from './modules/visitas-obra/visitas-obra.module';
     MaterialesModule,
     TrabajadoresObraModule,
     VisitasObraModule,
+    SolicitudesCambioModule,
   ],
 })
 export class AppModule {}
