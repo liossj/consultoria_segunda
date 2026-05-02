@@ -19,7 +19,7 @@ import { PresupuestosModule } from './modules/presupuestos/presupuestos.module';
 import { GastosModule } from './modules/gastos/gastos.module';
 import { InformesVisitaModule } from './modules/informes-visita/informes-visita.module';
 import { AprobacionesCambioModule } from './modules/aprobaciones-cambio/aprobaciones-cambio.module';
-
+import { ReportesModule } from './modules/reportes/reportes.module';
 
 
 @Module({
@@ -55,6 +55,7 @@ import { AprobacionesCambioModule } from './modules/aprobaciones-cambio/aprobaci
     GastosModule,
     InformesVisitaModule,
     AprobacionesCambioModule,
+    ReportesModule,
   ],
 })
 export class AppModule {}
